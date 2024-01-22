@@ -2,3 +2,5 @@
 terraform/*
 venv/*
 configuration.conf
+__pycache__/
+logs/
