@@ -46,7 +46,7 @@ with DAG(
 
     copy_to_redshift = BashOperator(
         task_id="copy_to_redshift",
-        bash_command=f"python /opt/airflow/extraction/aws_redshift_etl.py {output_name}",
+        bash_command=f"python /opt/airflow/extract/aws_redshift_etl.py {output_name}",
         dag=dag,
     )
     copy_to_redshift.doc_md = "Copy S3 CSV file to Redshift table"

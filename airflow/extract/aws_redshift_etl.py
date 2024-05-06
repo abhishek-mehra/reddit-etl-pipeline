@@ -68,7 +68,7 @@ def connect_to_redshift():
         rs_conn = redshift_connector.connect(
             host=HOST,
             database=DATABASE,
-            port=PORT,
+            port=int(PORT),
             user=USERNAME,
             password=PASSWORD
         )
